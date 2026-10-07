@@ -1,0 +1,19 @@
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+credentials
+credentials.*
+.aws/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
