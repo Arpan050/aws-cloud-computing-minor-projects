@@ -30,6 +30,16 @@ Implemented IAM users, groups, custom policies, managed policies, an EC2 IAM rol
 
 [Open Project](./03-aws-iam-security/)
 
+### 04. Terraform AWS Infrastructure Setup
+
+Terraform-based AWS infrastructure provisioning using Infrastructure as Code (IaC).
+
+**Resources:** VPC, public subnet, Internet Gateway, route table, security group, EC2 instance.
+
+**Key concepts:** Terraform, HCL, AWS provider, variables, outputs, AMI lookup, SSH, infrastructure lifecycle management.
+
+[Open Project](./04-terraform-aws-infrastructure/)
+
 ## Weekly Learning Log
 
 This section is updated every weekend after the Friday minor project.
