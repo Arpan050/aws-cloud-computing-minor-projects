@@ -86,3 +86,13 @@ Every Saturday or Sunday:
 ## Notes
 
 The PDF reports in each project folder are the original project documentation. The GitHub README files are the portfolio-focused summaries and should be kept cleaner and more concise than the original academic step-by-step documents.
+
+### 05. Docker + Jenkins Automation Project
+
+Built a Jenkins Declarative Pipeline to automate source checkout, Docker image building, and application container deployment.
+
+**Technologies:** Jenkins, Docker, GitHub, WSL 2, Node.js.
+
+**Key concepts:** CI/CD fundamentals, pipeline stages, Docker image builds, container lifecycle management, and troubleshooting Jenkins-to-Docker integration.
+
+[Open Project](./05-docker-jenkins-automation/)

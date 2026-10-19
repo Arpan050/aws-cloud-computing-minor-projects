@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+
+    options {
+        timestamps()
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                dir('05-docker-jenkins-automation') {
+                    sh 'docker build --pull -t jenkins-demo-app:latest .'
+                }
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                sh 'docker rm -f jenkins-demo-container || true'
+                sh 'docker run -d --name jenkins-demo-container -p 3000:3000 jenkins-demo-app:latest'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed. Check http://localhost:3000 from the Docker host.'
+        }
+        failure {
+            echo 'Pipeline failed. Review the stage console output before retrying.'
+        }
+    }
+}

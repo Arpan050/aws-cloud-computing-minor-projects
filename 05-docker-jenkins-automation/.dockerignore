@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+.env.*
+*.pem
+*.key
+node_modules
+README.md
+docs
+screenshots
